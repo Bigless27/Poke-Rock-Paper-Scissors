@@ -61,11 +61,18 @@ function Controller(){
 
     return this.results
   }
+
+
 }
 
+$(document).ready(function(){
+  Player1.prototype = new Game();
+  Player2.prototype = new Game();
+  var ryan = new Controller;
 
+  $('#play-button').on('click',function(event){
+    event.preventDefault();
+    $('.display').html(ryan.play());
+  });
+})
 
-Player1.prototype = new Game();
-Player2.prototype = new Game();
-var ryan = new Controller;
-console.log(ryan.play())
