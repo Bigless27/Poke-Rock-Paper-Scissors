@@ -70,8 +70,9 @@ Player2.prototype = new Game();
 var ryan = new Controller;
 
 angular.module("rockPaperScissors").controller("GamePlay",['$scope', function($scope){
+  $scope.results = ""
   $scope.playGame = function(){
-    console.log(ryan.play())
+    this.results = ryan.play();
   }
 }]);
 
