@@ -1,23 +1,22 @@
-function Game(){
-  this.choices = ["Rock", "Paper", "Scissors"];
-  this.pick = function(){
-    return this.choices[Math.floor((Math.random() * 3))]
+function Player(value){
+  this.choice = value;
+  this.wins = 0;
+  this.loses = 0;
+};
+
+function Computer(){
+  var selections = ['Rock', 'Paper', 'Scissors']
+  this.choice = function(){
+    return selections[Math.floor((Math.random()* 3))]
   }
-};
-
-function Player1(){
-  this.wins = 0;
-  this.loses = 0;
-};
-
-function Player2(){
   this.loses = 0;
   this.wins = 0;
 };
 
-function Controller(){
-  this.one = new Player1;
-  this.two = new Player2;
+function Controller(value){
+  this.value = value;
+  this.one = new Player(value);
+  this.two = new Computer;
   this.results = "Draw";
 
   this.play = function(){
@@ -62,11 +61,9 @@ function Controller(){
     return this.results
   }
 
-
 }
 
-Player1.prototype = new Game();
-Player2.prototype = new Game();
+
 var ryan = new Controller;
 
 angular.module("rockPaperScissors").controller("GamePlay",['$scope', function($scope){
