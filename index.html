@@ -5,13 +5,16 @@
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src = "game-play.js"></script>
+    <script src = "module-declaration.js"></script>
     <script src = "app.js"></script>
+    <script src = "game-play.js"></script>
 
   </head>
   <body ng-app = "rockPaperScissors">
 
-    <button id = "play-button">Play</button>
+    <div ng-controller = "GamePlay">
+      <button ng-click = "">Play</button>
+    </div>
 
     <div class = "display"></div>
 
