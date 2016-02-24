@@ -14,14 +14,13 @@ function Computer(){
 };
 
 function Controller(value){
-  this.value = value;
   this.one = new Player(value);
   this.two = new Computer;
   this.results = "Draw";
 
   this.play = function(){
-    if (this.one.pick() === "Rock"){
-      if (this.two.pick() == "Scissors"){
+    if (this.one.choice === "Rock"){
+      if (this.two.choice() == "Scissors"){
         this.one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
@@ -32,8 +31,8 @@ function Controller(value){
         this.results = "Player 2 wins";
       };
     }
-    else if(this.one.pick() === "Scissors"){
-      if (this.two.pick() == "Paper"){
+    else if(this.one.choice === "Scissors"){
+      if (this.two.choice() == "Paper"){
         this.one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
@@ -45,8 +44,8 @@ function Controller(value){
       };
     }
 
-    else if(this.one.pick() === "Paper"){
-      if (this.two.pick() == "Rock"){
+    else if(this.one.choice === "Paper"){
+      if (this.two.choice() == "Rock"){
         this.one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
