@@ -12,14 +12,13 @@
   </head>
   <body ng-app = "rockPaperScissors">
 
-    <div ng-controller = "GamePlay">
+    <div ng-controller = "MainController">
       <button ng-click = "playGame()">Play</button>
       {{results}}
-    </div>
 
-    <div class = "display"></div>
 
-    <div ng-controller = "MainController">
+      <div class = "display"></div>
+
       <div> {{pick.choice}} </div>
       <label ng-repeat = "choice in choices" for = "{{choice}}">
       {{choice}}
