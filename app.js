@@ -1,11 +1,11 @@
 angular.module("rockPaperScissors").controller("MainController",['$scope', function($scope){
+  $scope.choices = ['Rock', 'Paper', 'Scissors'];
+  $scope.pick = {choice: ''};
 
-  this.main = MainController.pick
-  $scope.choices = ['Rock', 'Paper', 'Scissors']
-  $scope.pick = {choice: ''}
-
-  $scope.results = ""
+  $scope.results = "";
   $scope.playGame = function(){
-    this.results = ryan.play(this.main);
+    var ryan = new Controller($scope.results);
+    console.log($scope.results)
+    this.results = ryan.play();
   }
 }]);
