@@ -1,28 +1,26 @@
-function Game(){
-  this.choices = ["Rock", "Paper", "Scissors"];
-  this.pick = function(){
-    return this.choices[Math.floor((Math.random() * 3))]
+function Player(value){
+  this.choice = value;
+  this.wins = 0;
+  this.loses = 0;
+};
+
+function Computer(){
+  var selections = ['Rock', 'Paper', 'Scissors']
+  this.choice = function(){
+    return selections[Math.floor((Math.random()* 3))]
   }
-};
-
-function Player1(){
-  this.wins = 0;
-  this.loses = 0;
-};
-
-function Player2(){
   this.loses = 0;
   this.wins = 0;
 };
 
-function Controller(){
-  this.one = new Player1;
-  this.two = new Player2;
+function Controller(value){
+  this.one = new Player(value);
+  this.two = new Computer;
   this.results = "Draw";
 
   this.play = function(){
-    if (this.one.pick() === "Rock"){
-      if (this.two.pick() == "Scissors"){
+    if (this.one.choice === "Rock"){
+      if (this.two.choice() == "Scissors"){
         this.one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
@@ -33,8 +31,8 @@ function Controller(){
         this.results = "Player 2 wins";
       };
     }
-    else if(this.one.pick() === "Scissors"){
-      if (this.two.pick() == "Paper"){
+    else if(this.one.choice === "Scissors"){
+      if (this.two.choice() == "Paper"){
         this.one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
@@ -46,8 +44,8 @@ function Controller(){
       };
     }
 
-    else if(this.one.pick() === "Paper"){
-      if (this.two.pick() == "Rock"){
+    else if(this.one.choice === "Paper"){
+      if (this.two.choice() == "Rock"){
         this.one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
@@ -62,18 +60,7 @@ function Controller(){
     return this.results
   }
 
-
 }
 
-Player1.prototype = new Game();
-Player2.prototype = new Game();
-var ryan = new Controller;
-
-angular.module("rockPaperScissors").controller("GamePlay",['$scope', function($scope){
-  $scope.results = ""
-  $scope.playGame = function(){
-    this.results = ryan.play();
-  }
-}]);
 
 
