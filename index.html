@@ -16,6 +16,7 @@
     <div class = "display"></div>
 
     <div ng-controller = "MainController">
+      <div> {{pick.choice}} </div>
       <label ng-repeat = "choice in choices" for = "{{choice}}">
       {{choice}}
         <input type = "radio"
@@ -25,7 +26,6 @@
                pick = "choice">
       </label>
 
-      <div> {{pick.choice}} </div>
     </div>
   </body>
 </html>
