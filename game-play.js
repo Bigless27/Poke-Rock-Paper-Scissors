@@ -43,7 +43,6 @@ function Controller(value){
         this.results = "Player 2 wins";
       };
     }
-
     else if(this.one.choice === "Paper"){
       if (this.two.choice() == "Rock"){
         this.one.wins  += 1;
@@ -56,10 +55,8 @@ function Controller(value){
         this.results = "Player 2 wins";
       };
     }
-
     return this.results
   }
-
 }
 
 
