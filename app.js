@@ -4,8 +4,9 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
 
   $scope.results = "";
   $scope.playGame = function(){
-    var ryan = new Controller($scope.results);
-    console.log($scope.results)
-    this.results = ryan.play();
+
+    var ryan = new Controller();
+    this.results = ryan.play($scope.pick.choice);
   }
 }]);
+
