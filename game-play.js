@@ -13,44 +13,46 @@ function Computer(){
   this.wins = 0;
 };
 
-function Controller(value){
-  this.one = new Player(value);
+function Controller(){
+//there's a problem in this function, Draw isn't showing up!
   this.two = new Computer;
   this.results = "Draw";
 
-  this.play = function(){
-    if (this.one.choice === "Rock"){
+  this.play = function(value){
+    var one = new Player(value);
+
+    if (one.choice === "Rock"){
       if (this.two.choice() == "Scissors"){
-        this.one.wins  += 1;
+        one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
       }
       else{
-        this.one.loses += 1;
+        one.loses += 1;
         this.two.wins += 1;
         this.results = "Player 2 wins";
       };
     }
-    else if(this.one.choice === "Scissors"){
+    else if(one.choice === "Scissors"){
       if (this.two.choice() == "Paper"){
-        this.one.wins  += 1;
+        one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
       }
       else{
-        this.one.loses += 1;
+        one.loses += 1;
         this.two.wins += 1;
         this.results = "Player 2 wins";
       };
     }
-    else if(this.one.choice === "Paper"){
+    else if(one.choice === "Paper"){
       if (this.two.choice() == "Rock"){
-        this.one.wins  += 1;
+        one.wins  += 1;
         this.two.loses += 1;
         this.results = "Player 1 wins";
       }
       else{
-        this.one.loses += 1;
+        one.loses += 1;
         this.two.wins += 1;
         this.results = "Player 2 wins";
       };
