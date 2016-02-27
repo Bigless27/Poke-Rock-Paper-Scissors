@@ -1,7 +1,8 @@
 function Player(value){
   this.choice = value;
   this.wins = 0;
-  this.loses = 0;
+  this.losses = 0;
+
 };
 
 function Computer(){
@@ -9,55 +10,53 @@ function Computer(){
   this.choice = function(){
     return selections[Math.floor((Math.random()* 3))]
   }
-  this.loses = 0;
+  this.losses = 0;
   this.wins = 0;
 };
 
 function Controller(){
 //there's a problem in this function, Draw isn't showing up!
-  this.two = new Computer;
-  this.results = "Draw";
+  this.computer = new Computer;
+
+
 
   this.play = function(value){
-    var one = new Player(value);
+    var player = new Player(value);
+    var computerChoice = this.computer.choice();
+    var results = "Draw";
 
-    if (one.choice === "Rock"){
-      if (this.two.choice() == "Scissors"){
-        one.wins  += 1;
-        this.two.loses += 1;
-        this.results = "Player 1 wins";
-      }
-      else{
-        one.loses += 1;
-        this.two.wins += 1;
-        this.results = "Player 2 wins";
-      };
+    if (player.choice == ""){
+      results = "No choice selected"
+      return results
+    };
+    if (player.choice == computerChoice){
+      results = "Draw";
+      return "Draw";
+    };
+    if (player.choice == "Rock" && computerChoice == "Scissors"){
+      results = "You Win";
+      return results;
     }
-    else if(one.choice === "Scissors"){
-      if (this.two.choice() == "Paper"){
-        one.wins  += 1;
-        this.two.loses += 1;
-        this.results = "Player 1 wins";
-      }
-      else{
-        one.loses += 1;
-        this.two.wins += 1;
-        this.results = "Player 2 wins";
-      };
+    else if(player.choice == "Scissors" && computerChoice == "Rock"){
+      results = "Computer Wins";
+      return results;
     }
-    else if(one.choice === "Paper"){
-      if (this.two.choice() == "Rock"){
-        one.wins  += 1;
-        this.two.loses += 1;
-        this.results = "Player 1 wins";
-      }
-      else{
-        one.loses += 1;
-        this.two.wins += 1;
-        this.results = "Player 2 wins";
-      };
+    else if (player.choice == "Paper" && computerChoice == "Rock"){
+      results = "You Win";
+      return results;
     }
-    return this.results
+    else if(player.choice == "Rock" && computerChoice == "Paper"){
+      results = "Computer Wins";
+      return results;
+    }
+    else if(player.choice == "Scissors" && computerChoice == "Paper"){
+      results = "You Win";
+      return results;
+    }
+    else if(player.choice == "Paper" && compuerChouce == "Scissors" ){
+      results = "You Win";
+      return results;
+    }
   }
 }
 
