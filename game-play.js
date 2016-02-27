@@ -16,17 +16,47 @@ function Computer(){
 
 function Controller(){
 //there's a problem in this function, Draw isn't showing up!
-  this.two = new Computer;
-  this.results = "Draw";
+  this.computer = new Computer;
+
 
 
   this.play = function(value){
     var player = new Player(value);
-    var computerChoice = this.two.choice()
-    debugger
-    debugger
+    var computerChoice = this.computer.choice();
+    var results = "Draw";
 
-    return this.results
+    if (player.choice == ""){
+      results = "No choice selected"
+      return results
+    };
+    if (player.choice == computerChoice){
+      results = "Draw";
+      return "Draw";
+    };
+    if (player.choice == "Rock" && computerChoice == "Scissors"){
+      results = "You Win";
+      return results;
+    }
+    else if(player.choice == "Scissors" && computerChoice == "Rock"){
+      results = "Computer Wins";
+      return results;
+    }
+    else if (player.choice == "Paper" && computerChoice == "Rock"){
+      results = "You Win";
+      return results;
+    }
+    else if(player.choice == "Rock" && computerChoice == "Paper"){
+      results = "Computer Wins";
+      return results;
+    }
+    else if(player.choice == "Scissors" && computerChoice == "Paper"){
+      results = "You Win";
+      return results;
+    }
+    else if(player.choice == "Paper" && compuerChouce == "Scissors" ){
+      results = "You Win";
+      return results;
+    }
   }
 }
 
