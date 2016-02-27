@@ -15,7 +15,6 @@ function Computer(){
 };
 
 function Controller(){
-//there's a problem in this function, Draw isn't showing up!
   this.computer = new Computer;
 
 
