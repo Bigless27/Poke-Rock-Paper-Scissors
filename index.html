@@ -8,6 +8,7 @@
     <script src = "module-declaration.js"></script>
     <script src = "app.js"></script>
     <script src = "game-play.js"></script>
+    <script src = "stats.js"></script>
 
   </head>
   <body ng-app = "rockPaperScissors">
@@ -28,6 +29,10 @@
                id = "{{choice}}"
                pick = "choice">
       </label>
+    </div>
+
+    <div ng-controller = "StatsController">
+      {{hello}}
     </div>
   </body>
 </html>
