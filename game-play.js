@@ -13,9 +13,10 @@ function Computer(){
 
 function Controller(){
   this.computer = new Computer;
+  this.computersPick = this.computer.choice();
   this.play = function(value){
     var player = new Player(value);
-    var computerChoice = this.computer.choice();
+    var computerChoice = this.computersPick;
     var results = "Draw";
     if (player.choice == ""){
       results = "No choice selected"
