@@ -4,7 +4,7 @@
 * Basic game play complete, just open index.html in browser to run
 
 ###Features to add
--Display computers choice
--Add a reset stats button
+* Display computers choice
+* Add a reset stats button
 
 
