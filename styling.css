@@ -1,1 +1,26 @@
-body{color:red;}
+#main-container{border: red 2px solid; width: 600px; margin: auto;}
+
+.choices{text-align: center; padding: 30px 0px 0px 0px;}
+
+#button-container{
+                  margin: auto;
+                  height: 100px;
+                  width: 100px;
+                  border: red solid 2px;
+                  padding-top: 20px;
+
+}
+
+.play-button{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            }
+
+#stats-container{
+                  text-align: center;
+}
