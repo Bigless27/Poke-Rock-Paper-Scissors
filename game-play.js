@@ -17,7 +17,7 @@ function Controller(){
     var player = new Player(value);
     var computerChoice = this.computer.choice();
     var results = "Draw";
-
+    debugger
     if (player.choice == ""){
       results = "No choice selected"
       return results
@@ -47,7 +47,7 @@ function Controller(){
       return results;
     }
     else if(player.choice == "Paper" && computerChoice == "Scissors" ){
-      results = "You Win";
+      results = "Computer Wins";
       return results;
     }
   }
