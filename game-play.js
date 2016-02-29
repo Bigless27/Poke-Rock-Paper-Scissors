@@ -2,7 +2,6 @@ function Player(value){
   this.choice = value;
   this.wins = 0;
   this.losses = 0;
-
 };
 
 function Computer(){
@@ -16,9 +15,6 @@ function Computer(){
 
 function Controller(){
   this.computer = new Computer;
-
-
-
   this.play = function(value){
     var player = new Player(value);
     var computerChoice = this.computer.choice();
