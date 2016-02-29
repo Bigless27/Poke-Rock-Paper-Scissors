@@ -1,7 +1,12 @@
+body{
+    background-color: #ccc;
+}
+
 #main-container{
                border: red 2px solid;
-                width: 600px;
+                width: 800px;
                 margin: auto;
+                background-color: #fff
               }
 
 .choices{
@@ -10,9 +15,10 @@
        }
 
 #button-container{
-                  margin: auto;
+
                   height: 100px;
-                  width: 100px;
+                  width: 400px;
+                  margin: auto;
                   /*border: red solid 2px;*/
                   padding-top: 20px;
                   }
@@ -40,10 +46,19 @@
               text-align: center;
 }
 
+#picture-container{
+                  width: 700px;
+                  height: 250px;
+                  border: 2px solid blue;
+                  margin: auto;
+}
+
 .winning-picture{
                   border: red 2px solid;
                   height: 100px;
                   width: 100px;
                   background-image: url("images/donkey-kong-thumbs-up.png");
-                  background-size: 100% 100%
+                  background-size: 100% 100%;
+                  display:inline-block;
+
 }
