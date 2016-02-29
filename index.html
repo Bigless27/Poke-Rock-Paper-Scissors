@@ -11,13 +11,9 @@
 
   </head>
   <body ng-app = "rockPaperScissors">
-
     <div ng-controller = "MainController">
       <button ng-click = "playGame()">Play</button>
       {{results}}
-
-
-      <div class = "display"></div>
 
       <div> {{pick.choice}} </div>
       <label ng-repeat = "choice in choices" for = "{{choice}}">
@@ -32,6 +28,5 @@
       <h3> wins:{{wins}}</h3>
       <h3> losses:{{losses}}</h3>
     </div>
-
   </body>
 </html>
