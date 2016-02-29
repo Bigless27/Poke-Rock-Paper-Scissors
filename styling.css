@@ -3,7 +3,7 @@ body{
 }
 
 #main-container{
-               border: red 2px solid;
+               /*border: red 2px solid;*/
                 width: 800px;
                 margin: auto;
                 background-color: #fff
@@ -18,7 +18,7 @@ body{
                   height: 100px;
                   width: 100px;
                   margin: auto;
-                  border: red solid 2px;
+                  /*border: red solid 2px;*/
                   padding-top: 20px;
                   }
 
@@ -48,18 +48,31 @@ body{
 #picture-container{
                   width: 700px;
                   height: 250px;
-                  border: 2px solid blue;
+                 /* border: 2px solid blue;*/
                   margin: auto;
                   position: relative;
 }
 
-.winning-picture{
-                  border: red 2px solid;
+.result-picture{
+                  /*border: red 2px solid;*/
                   height: 200px;
                   width: 200px;
-                  background-image: url("images/donkey-kong-thumbs-up.png");
-                  background-size: 100% 100%;
                   position: absolute;
                   margin-left: 20px;
                   top: 20px;
+}
+
+.win{
+    background-image: url("images/donkey-kong-thumbs-up.png");
+    background-size: 100% 100%;
+}
+
+.lose{
+  background-image: url("images/computer-wins-bowser.png");
+  background-size: 100% 100%;
+}
+
+.draw{
+  background-image: url("images/draw-picture-psyduck.png");
+  background-size: 100% 100%;
 }
