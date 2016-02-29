@@ -25,14 +25,16 @@
                  pick = "choice">
         </label>
       </div>
-      <div id = "button-container">
-        <button class = "play-button" ng-click = "playGame()">Play</button>
+      <div id = "picture-container">
+        <div id = "button-container">
+          <button class = "play-button" ng-click = "playGame()">Play</button>
+        </div>
+        <div class = "winning-picture">
+          </div>
       </div>
       <div id = "stats-container">
         <h3> wins:{{wins}} losses:{{losses}}</h3>
       </div>
-    </div>
-    <div class = "winning-picture">
     </div>
   </body>
 </html>
