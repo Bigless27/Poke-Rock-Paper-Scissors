@@ -1,5 +1,5 @@
 #main-container{
-               /* border: red 2px solid;*/
+               border: red 2px solid;
                 width: 600px;
                 margin: auto;
               }
@@ -38,4 +38,12 @@
               margin: auto;
               /*border: 2px solid blue;*/
               text-align: center;
+}
+
+.winning-picture{
+                  border: red 2px solid;
+                  height: 100px;
+                  width: 100px;
+                  background-image: url("images/donkey-kong-thumbs-up.png");
+                  background-size: 100% 100%
 }
