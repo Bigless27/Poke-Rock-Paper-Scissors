@@ -13,9 +13,8 @@
   </head>
   <body ng-app = "rockPaperScissors">
     <div id= "main-container" ng-controller = "MainController">
-      {{results}}
 
-      <div> {{pick.choice}} </div>
+      <div class = "results"> {{results}}</div>
       <div class = "choices">
         <label ng-repeat = "choice in choices" for = "{{choice}}">
         {{choice}}
