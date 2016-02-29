@@ -13,7 +13,6 @@
   </head>
   <body ng-app = "rockPaperScissors">
     <div id= "main-container" ng-controller = "MainController">
-      <button ng-click = "playGame()">Play</button>
       {{results}}
 
       <div> {{pick.choice}} </div>
@@ -27,8 +26,12 @@
                  pick = "choice">
         </label>
       </div>
-      <h3> wins:{{wins}}</h3>
-      <h3> losses:{{losses}}</h3>
+      <div id = "button-container">
+        <button class = "play-button" ng-click = "playGame()">Play</button>
+      </div>
+      <div id = "stats-container">
+        <h3> wins:{{wins}} losses:{{losses}}</h3>
+      </div>
     </div>
   </body>
 </html>
