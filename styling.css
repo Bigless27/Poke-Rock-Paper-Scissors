@@ -45,6 +45,12 @@ body{
               text-align: center;
 }
 
+.computer-choice{
+                margin: auto;
+                height: 20px;
+                width: 175px;
+}
+
 #picture-container{
                   width: 700px;
                   height: 250px;
@@ -61,6 +67,7 @@ body{
                   margin-left: 20px;
                   top: 20px;
 }
+
 
 .win{
     background-image: url("images/donkey-kong-thumbs-up.png");
