@@ -9,8 +9,6 @@ function Computer(){
   this.choice = function(){
     return selections[Math.floor((Math.random()* 3))]
   }
-  this.losses = 0;
-  this.wins = 0;
 };
 
 function Controller(){
@@ -48,7 +46,7 @@ function Controller(){
       results = "You Win";
       return results;
     }
-    else if(player.choice == "Paper" && compuerChouce == "Scissors" ){
+    else if(player.choice == "Paper" && computerChoice == "Scissors" ){
       results = "You Win";
       return results;
     }
