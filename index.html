@@ -3,6 +3,7 @@
 
   <head>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="styling.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src = "module-declaration.js"></script>
@@ -11,22 +12,29 @@
 
   </head>
   <body ng-app = "rockPaperScissors">
-    <div ng-controller = "MainController">
-      <button ng-click = "playGame()">Play</button>
-      {{results}}
+    <div id= "main-container" ng-controller = "MainController">
 
-      <div> {{pick.choice}} </div>
-      <label ng-repeat = "choice in choices" for = "{{choice}}">
-      {{choice}}
-        <input type = "radio"
-               ng-model = "pick.choice"
-               ng-value = "choice"
-               id = "{{choice}}"
-               pick = "choice">
-      </label>
-
-      <h3> wins:{{wins}}</h3>
-      <h3> losses:{{losses}}</h3>
+      <div class = "results"> {{results}}</div>
+      <div class = "choices">
+        <label ng-repeat = "choice in choices" for = "{{choice}}">
+        {{choice}}
+          <input type = "radio"
+                 ng-model = "pick.choice"
+                 ng-value = "choice"
+                 id = "{{choice}}"
+                 pick = "choice">
+        </label>
+      </div>
+      <div id = "picture-container">
+        <div id = "button-container">
+          <button class = "play-button" ng-click = "playGame()">Play</button>
+        </div>
+        <div class = "result-picture" ng-class = "{'win': results === 'You Win', 'lose': results === 'Computer Wins', 'draw': results === 'Draw'}">
+          </div>
+      </div>
+      <div id = "stats-container">
+        <h3> wins:{{wins}} losses:{{losses}}</h3>
+      </div>
     </div>
   </body>
 </html>

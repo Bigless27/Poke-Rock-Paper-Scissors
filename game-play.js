@@ -17,7 +17,6 @@ function Controller(){
     var player = new Player(value);
     var computerChoice = this.computer.choice();
     var results = "Draw";
-    debugger
     if (player.choice == ""){
       results = "No choice selected"
       return results
