@@ -29,7 +29,7 @@
         <div id = "button-container">
           <button class = "play-button" ng-click = "playGame()">Play</button>
         </div>
-        <div class = "winning-picture">
+        <div class = "result-picture" ng-class = "{'win': results === 'You Win', 'lose': results === 'Computer Wins', 'draw': results === 'Draw'}">
           </div>
       </div>
       <div id = "stats-container">
