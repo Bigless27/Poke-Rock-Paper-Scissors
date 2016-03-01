@@ -22,7 +22,9 @@
           <img class = "right-hand animate" alt= "right fist" src="images/RPS-hand-right.png" height = 200px width = 200px>
           <div class = "results"> {{results}}</div>
         </div>
-        <div class = "computer-choice"> Computer chose: {{computerChoice}}</div>
+        <div class = "computer-choice"> Computer chose:
+          <span class = "choice"> {{computerChoice}}</span>
+        </div>
         <div class = "choices">
           <label ng-repeat = "choice in choices" for = "{{choice}}">
           {{choice}}
