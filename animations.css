@@ -1,0 +1,39 @@
+@keyframes hand{
+                      0% {
+                          transform:translateY(-100%);
+                         }
+                      5% {
+                          transform:translateY(-100%);
+                         }
+                      15% {transform:translateY(-0);
+                            padding-bottom: 5px;
+                          }
+                      30% {
+                            transform:translateY(-33%);
+                            padding-bottom: 5px;
+                          }
+                      40% {
+                            transform:translateY(0);
+                            padding-bottom: 6px;
+                          }
+                      50% {transform:translateY(-30%);}
+                      70% {
+                          transform:translateY(0%);
+                          padding-bottom: 7px;
+                      }
+                    }
+.left-hand{
+            float:left;
+            position: absolute;
+            padding-top: 30px;
+}
+
+.right-hand{
+            float:right;
+            padding-top: 30px;
+}
+
+.animation{
+  animation-name: hand;
+  animation-duration: 3s;
+}
