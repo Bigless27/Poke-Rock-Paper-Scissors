@@ -1,7 +1,6 @@
 # Rock Paper Scissors JavaScript
 
-**MVP now complete and fully functioning!**
-
+* **MVP now complete and fully functioning!**
 * Simple application using Angular.js to build a Rock, Paper, Scissors game
 * Basic game play complete, just open index.html in browser to run
 
