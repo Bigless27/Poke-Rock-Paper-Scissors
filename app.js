@@ -18,6 +18,13 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
     }
   }
 
+  $scope.resetStats = function(){
+    $scope.results = "";
+    $scope.wins = 0;
+    $scope.losses = 0;
+    $scope.computerChoice = "None";
+  }
+
 
 }]);
 
