@@ -17,7 +17,11 @@
     <div id= "main-container" ng-controller = "MainController">
 
       <div id = "animations-container" ng-controller = "AnimationsController">
-        <div class = "results"> {{results}}</div>
+        <div class = "hand-container">
+          <img class = "left-hand animate" alt= "left fist" src="images/RPS-hand-left.png" height = 200px width = 200px>
+          <img class = "right-hand animate" alt= "right fist" src="images/RPS-hand-right.png" height = 200px width = 200px>
+          <div class = "results"> {{results}}</div>
+        </div>
         <div class = "computer-choice"> Computer chose: {{computerChoice}}</div>
         <div class = "choices">
           <label ng-repeat = "choice in choices" for = "{{choice}}">
@@ -28,10 +32,10 @@
                    id = "{{choice}}"
                    pick = "choice">
           </label>
-        </div>
+       </div>
         <div id = "picture-container">
           <div id = "button-container">
-            <button class = "play-button" ng-click = "playGame()">Play</button>
+            <button class = "play-button" ng-click = "playGame(); shake()">Play</button>
           </div>
           <div class = "result-picture" ng-class = "{'win': results === 'You Win', 'lose': results === 'Computer Wins', 'draw': results === 'Draw'}">
             </div>
