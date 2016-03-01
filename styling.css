@@ -41,7 +41,8 @@ body{
               height: 80px;
               width: 200px;
               margin: auto;
-              /*border: 2px solid blue;*/
+              padding-top: 30px;
+   /*           border: 2px solid blue;*/
               text-align: center;
 }
 
@@ -99,3 +100,9 @@ body{
               background-color: red;
               color: #fff;
 }
+
+.hand-container{
+                width: 800px;
+                height: 200px;
+}
+
