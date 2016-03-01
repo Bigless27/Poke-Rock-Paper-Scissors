@@ -24,7 +24,5 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
       $scope.losses = 0;
       $scope.computerChoice = "None";
     }
-
-
 }]);
 
