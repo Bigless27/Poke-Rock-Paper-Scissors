@@ -83,3 +83,19 @@ body{
   background-image: url("images/draw-picture-psyduck.png");
   background-size: 100% 100%;
 }
+
+#reset-button-container{
+                        width: 60px;
+                        height: 80px;
+                        margin: auto;
+
+}
+
+.reset-button{
+              width: 60px;
+              height: 60px;
+              padding-bottom: 10px;
+              text-align: center;
+              background-color: red;
+              color: #fff;
+}
