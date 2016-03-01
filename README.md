@@ -5,9 +5,10 @@
 
 ###Features to add
 * [X] Display computers choice 
-* [X] Add a reset stats button [X]
-* [] Create hand animation for playing rock paper scissors
-* [] upload different picture of a rock paper or scisors for animate gameplay
+* [X] Add a reset stats button 
+* [ ] Create hand animation for playing rock paper scissors
+* [ ] Upload different picture of a rock paper or scisors for animated gameplay
+* [ ] Add more styling to improve UI
 
 
 
