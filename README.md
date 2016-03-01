@@ -4,7 +4,10 @@
 * Basic game play complete, just open index.html in browser to run
 
 ###Features to add
-* Display computers choice
-* Add a reset stats button
+* [X] Display computers choice 
+* [X] Add a reset stats button [X]
+* [] Create hand animation for playing rock paper scissors
+* [] upload different picture of a rock paper or scisors for animate gameplay
+
 
 
