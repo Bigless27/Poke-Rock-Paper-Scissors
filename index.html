@@ -19,13 +19,26 @@
     <div id= "main-container" ng-controller = "MainController">
 
       <div id = "animations-container" ng-controller = "AnimationsController">
-        <div class = "pokemon">
-          <img ng-src="{{pokemon}}">
+        <div id = "top-content-container">
+          <div class = "player-text">
+            Player
+          </div>
+          <div class = "computer-text">
+            Computer
+          </div>
+          <div id = "pokemon-container">
+            <div class = "pokemon-player">
+              <img ng-src = "{{pokemonPlayer}}">
+            </div>
+            <div class = "pokemon-computer">
+              <img ng-src = "{{pokemonComputer}}">
+            </div>
+          </div>
         </div>
         <div class = "hand-container">
           <img class = "left-hand animate" alt= "left fist" src="images/RPS-hand-left.png" height = 200px width = 200px>
           <img class = "right-hand animate" alt= "right fist" src="images/RPS-hand-right.png" height = 200px width = 200px>
-          <div class = "results"></div>
+          <div class = "results">{{results}}</div>
         </div>
         <div class = "computer-choice"> Computer chose:
           <span class = "choice"> {{computerChoice}}</span>
