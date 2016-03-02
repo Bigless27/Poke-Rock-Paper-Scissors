@@ -5,7 +5,7 @@ function Player(value){
 };
 
 function Computer(){
-  var selections = ['Rock', 'Paper', 'Scissors']
+  var selections = ['Fire', 'Water', 'Grass']
   this.choice = function(){
     return selections[Math.floor((Math.random()* 3))]
   }
@@ -26,27 +26,27 @@ function Controller(){
       results = "Draw";
       return "Draw";
     };
-    if (player.choice == "Rock" && computerChoice == "Scissors"){
+    if (player.choice == "Fire" && computerChoice == "Grass"){
       results = "You Win";
       return results;
     }
-    else if(player.choice == "Scissors" && computerChoice == "Rock"){
+    else if(player.choice == "Grass" && computerChoice == "Fire"){
       results = "Computer Wins";
       return results;
     }
-    else if (player.choice == "Paper" && computerChoice == "Rock"){
+    else if (player.choice == "Water" && computerChoice == "Fire"){
       results = "You Win";
       return results;
     }
-    else if(player.choice == "Rock" && computerChoice == "Paper"){
+    else if(player.choice == "Fire" && computerChoice == "Water"){
       results = "Computer Wins";
       return results;
     }
-    else if(player.choice == "Scissors" && computerChoice == "Paper"){
+    else if(player.choice == "Grass" && computerChoice == "Water"){
       results = "You Win";
       return results;
     }
-    else if(player.choice == "Paper" && computerChoice == "Scissors" ){
+    else if(player.choice == "Water" && computerChoice == "Grass" ){
       results = "Computer Wins";
       return results;
     }
