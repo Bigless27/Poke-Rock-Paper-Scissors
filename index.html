@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src = "module-declaration.js"></script>
+    <script src = "pokemon.js"></script>
     <script src = "app.js"></script>
     <script src = "animations.js"></script>
     <script src = "game-play.js"></script>
@@ -37,7 +38,8 @@
        </div>
         <div id = "picture-container">
           <div id = "button-container">
-            <button class = "play-button" ng-click = "playGame(); shake()">Play</button>
+            <div>{{pokemon}}</div>
+            <button class = "play-button" ng-click = "playGame(); shake(); pokmon()">Play</button>
           </div>
           <div class = "result-picture" ng-class = "{'win': results === 'You Win', 'lose': results === 'Computer Wins', 'draw': results === 'Draw'}">
             </div>
