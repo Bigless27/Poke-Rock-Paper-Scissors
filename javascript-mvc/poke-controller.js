@@ -1,11 +1,4 @@
 function pokeController(){
-  this.pokedex = new Pokedex()
+  this.pokedexController = new Pokedex()
+  this.choicePokemon = this.pokedexController.getPokemon()
 }
-
-var pokemon = new pokeController()
-pokemon.pokedex.getPokemon()
-
-$(document).ready(function(){
-
-})
-
