@@ -19,8 +19,13 @@
     <div id= "main-container" ng-controller = "MainController">
 
       <div id = "animations-container" ng-controller = "AnimationsController">
-        <div class = "pokemon">
-          <img ng-src="{{pokemon}}">
+        <div id = "pokemon-container">
+          <div class = "pokemon-player">
+            <img ng-src = "{{pokemonPlayer}}">
+          </div>
+          <div class = "pokemon-computer">
+            <img ng-src = "{{pokemonComputer}}">
+          </div>
         </div>
         <div class = "hand-container">
           <img class = "left-hand animate" alt= "left fist" src="images/RPS-hand-left.png" height = 200px width = 200px>
