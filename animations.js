@@ -2,7 +2,8 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
   angular.element(document).ready(function(){
       pokemonController = new pokeController()
       $('.animate').hide()
-      $scope.pokemon = ''
+      $scope.pokemonPlayer = ''
+      $scope.pokemonComputer = ''
       function removeAnimationClass(){
         $('.animate').removeClass("animation");
         $('.play-button').removeAttr('disabled');
@@ -21,7 +22,8 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
       }
 
       $scope.showPokemon = function(){
-        $scope.pokemon = pokemonController.choicePokemon['grass'][0]
+        $scope.pokemonPlayer = pokemonController.choicePokemon['grass'][0];
+        $scope.pokemonComputer = pokemonController.choicePokemon["fire"][0];
       }
   })
 }])
