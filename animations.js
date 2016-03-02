@@ -1,6 +1,6 @@
 angular.module("rockPaperScissors").controller("AnimationsController",['$scope',function($scope){
   angular.element(document).ready(function(){
-
+      pokemonController = new pokeController()
       $('.animate').hide()
       $scope.pokemon = ''
       function removeAnimationClass(){
@@ -19,6 +19,9 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
         $('.result-picture').hide()
         setTimeout(removeAnimationClass,2000)
       }
-      console.log(pokedex)
+
+      $scope.showPokemon = function(){
+        $scope.pokemon = pokemonController.choicePokemon['grass'][0]
+      }
   })
 }])
