@@ -19,6 +19,5 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
         $('.result-picture').hide()
         setTimeout(removeAnimationClass,2000)
       }
-      console.log(pokedex)
   })
 }])
