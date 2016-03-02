@@ -1,7 +1,11 @@
 $(document).ready(function(){
   pokedex = {"grass": [], "fire": [], "water": []};
-  for(i = 1; i < 10; i++){
-    $.get("http://pokeapi.co/api/v2/pokemon/"+ i + "/",function(result){
+  pokemonId = [3,6,9,154,157,160,254,257,260];
+
+  function getPokemon(){
+  for(i in pokemonId){
+    debugger
+    $.get("http://pokeapi.co/api/v2/pokemon/"+ pokemonId[i] + "/",function(result){
 
       }).then(function(result){
         poketypeArray = [];
@@ -17,7 +21,8 @@ $(document).ready(function(){
         else if(poketypeArray.includes("water") === true){
           pokedex.water.push("http://pokeapi.co/media/img/" + result.id + ".png");
         }
-    });
+      });
+    }
   }
 });
 
