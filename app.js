@@ -1,5 +1,5 @@
 angular.module("rockPaperScissors").controller("MainController",['$scope', function($scope){
-    $scope.choices = ['Rock', 'Paper', 'Scissors'];
+    $scope.choices = ['Grass', 'Water', 'Fire'];
     $scope.pick = {choice: ''};
 
     $scope.results = "";
