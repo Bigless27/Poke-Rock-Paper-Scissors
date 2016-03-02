@@ -37,3 +37,18 @@
   animation-name: hand;
   animation-duration: 3s;
 }
+
+#pokemon-container{
+  border: 2px solid blue;
+  height: 200px;
+  width: 600px;
+  margin: auto;
+}
+
+.pokemon-player{
+  float: left;
+}
+
+.pokemon-computer{
+  float:right;
+}
