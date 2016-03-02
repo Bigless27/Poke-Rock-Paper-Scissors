@@ -3,7 +3,6 @@ body{
 }
 
 #main-container{
-               /*border: red 2px solid;*/
                 width: 800px;
                 margin: auto;
                 background-color: #fff
@@ -18,7 +17,7 @@ body{
                   height: 100px;
                   width: 100px;
                   margin: auto;
-                  /*border: red solid 2px;*/
+                 /* border: red solid 2px;*/
                   padding-top: 20px;
                   }
 
@@ -58,7 +57,7 @@ body{
 
 #picture-container{
                   width: 700px;
-                  height: 250px;
+                  height: 150px;
                  /* border: 2px solid blue;*/
                   margin: auto;
                   position: relative;
