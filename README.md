@@ -11,8 +11,11 @@
 * [ ] Refactor game play logic
 * [ ] Refactor Angular controllers
 * [ ] Write test before future development
+* [ ] Look into using the Pokemon API for this project
+* [ ] Pivot the project from a Rock, Paper, Scissors game into a Pokemon API game.
 * [ ] Upload different picture of a rock paper or scisors for animated gameplay
 * [ ] Add more styling to improve UI
+
 
 
 
