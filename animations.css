@@ -38,17 +38,45 @@
   animation-duration: 3s;
 }
 
+#top-content-container{
+  position:relative;
+}
+
+.computer-text{
+  position: absolute;
+  right: 100px;
+  top: 70px;
+  font-size: 25px;
+  font-family: impact,helvetica,arial;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: red;
+}
+
+.player-text{
+  position: absolute;
+  font-size: 25px;
+  left: 100px;
+  top: 70px;
+  font-family: impact,helvetica,arial;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: red;
+}
+
 #pokemon-container{
-  border: 2px solid blue;
   height: 200px;
-  width: 600px;
+  width: 300px;
   margin: auto;
 }
 
 .pokemon-player{
+  padding-top: 40px;
   float: left;
 }
 
 .pokemon-computer{
-  float:right;
+  padding-top: 40px;
+  float: right;
 }
+
