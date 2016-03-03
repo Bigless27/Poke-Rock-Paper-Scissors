@@ -12,6 +12,7 @@
 * [X] Look into using the Pokemon API for this project
 * [X] Pivot the project from a Rock, Paper, Scissors game into a Pokemon Rock Paper Scissors game.
 * [X] Refactor game play logic
+* [ ] Change the name of the repository!
 * [ ] Clean u[ Game play Logic
 * [ ] Refactor Angular controllers
 * [ ] Add Sweet alert to display game instructions in the beggining
