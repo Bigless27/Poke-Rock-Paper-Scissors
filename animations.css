@@ -66,7 +66,7 @@
 
 #pokemon-container{
   height: 200px;
-  width: 400px;
+  width: 350px;
   margin: auto;
 }
 
@@ -78,5 +78,11 @@
 .pokemon-computer{
   padding-top: 40px;
   float: right;
+}
+
+.pokepic{
+  height: 150px;
+  width: 150px;
+  border-image: none;
 }
 
