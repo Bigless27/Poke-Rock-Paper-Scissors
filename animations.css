@@ -23,9 +23,9 @@
                       }
                     }
 .left-hand{
-            float:left;
             position: absolute;
             padding-top: 30px;
+            left: 162px;
 }
 
 .right-hand{
@@ -65,7 +65,7 @@
 }
 
 #pokemon-container{
-  height: 170px;
+  height: 200px;
   width: 400px;
   margin: auto;
 }
