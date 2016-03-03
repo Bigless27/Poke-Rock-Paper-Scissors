@@ -1,7 +1,8 @@
 angular.module("rockPaperScissors").controller("AnimationsController",['$scope',function($scope){
   angular.element(document).ready(function(){
       pokemonController = new pokeController()
-      $('.animate').hide()
+      $('.animate').hide();
+      $('.pokepic').hide();
       $scope.pokemonPlayer = ''
       $scope.pokemonComputer = ''
       function removeAnimationClass(){
@@ -10,8 +11,10 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
         $('.results').show();
         $('.computer-choice .choice').show();
         $('.result-picture ').show();
+        $(".pokepic").show();
       }
       $scope.shake = function(){
+        $(".pokepic").hide();
         $('.animate').show();
         $('.animate').addClass("animation");
         $('.play-button').attr('disabled', 'disabled');
