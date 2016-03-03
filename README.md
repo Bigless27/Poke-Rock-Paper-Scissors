@@ -1,10 +1,9 @@
 # Rock Paper Scissors JavaScript
 
-* **MVP now complete and fully functioning!**
+* **Pivoting Complete, now a Pokemon Rock Paper Scissors game!!!**
+* MVP now complete and fully functioning!
 * Simple application using Angular.js to build a Rock, Paper, Scissors game
 * Basic game play complete, just open index.html in browser to run
-
-#Pivoting Complete, now a Pokemon Rock Paper Scissors game!!!
 
 ##Features to add
 * [X] Display computers choice 
