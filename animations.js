@@ -25,12 +25,6 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
 
         $scope.pokemonPlayer = pokemonController.choicePokemon[($scope.pick.choice).toLowerCase()][Math.floor((Math.random()* 3))];
         $scope.pokemonComputer = pokemonController.choicePokemon[($scope.computerChoice).toLowerCase()][Math.floor((Math.random()* 3))];
-        $scope.$apply(function() {
-           $scope.pokemonPlayer.width = img.width;
-           $scope.image.height = img.height;
-          $scope.image.path = $scope.imageurl;
-         });
-
       }
   })
 }])
