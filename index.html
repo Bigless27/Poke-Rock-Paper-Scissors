@@ -12,7 +12,6 @@
     <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script>
     <script src = "javascript-pokeapi/pokemon.js"></script>
     <script src = "javascript-pokeapi/poke-controller.js"></script>
-    <script src = "sweet-alerts/sweetAlerts.js"></script>
     <script src = "app.js"></script>
     <script src = "animations.js"></script>
     <script src = "game-play.js"></script>
@@ -27,7 +26,7 @@
             Player
           </div>
           <div class = "computer-text">
-            Computer
+            Gendelman
           </div>
           <div id = "pokemon-container">
             <div class = "pokemon-player">
@@ -43,7 +42,7 @@
           <img class = "right-hand animate" alt= "right fist" src="images/RPS-hand-right.png" height = 200px width = 200px>
           <div class = "results">{{results}}</div>
         </div>
-        <div class = "computer-choice"> Computer chose:
+        <div class = "computer-choice"> Gendelman chose:
           <span class = "choice"> {{computerChoice}}</span>
         </div>
         <div class = "choices">
@@ -60,12 +59,12 @@
           <div id = "button-container">
             <button class = "play-button" ng-click = "playGame(); shake(); showPokemon()">Play</button>
           </div>
-          <div class = "result-picture" ng-class = "{'win': results === 'You Win', 'lose': results === 'Computer Wins', 'draw': results === 'Draw'}">
+          <div class = "result-picture" ng-class = "{'win': results === 'You Win', 'lose': results === 'Gendelman Wins', 'draw': results === 'Draw'}">
             </div>
         </div>
       </div>
       <div id = "stats-container">
-        <h3> wins:{{wins}} losses:{{losses}}</h3>
+        <h3> wins:<span class = "wins">{{wins}}</span> losses:{{losses}}</h3>
       </div>
       <div id = "reset-button-container">
         <button class = "reset-button" ng-click = "resetStats()">Reset Stats</button>
