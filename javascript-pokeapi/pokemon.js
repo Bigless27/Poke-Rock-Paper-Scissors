@@ -1,5 +1,5 @@
 function Pokedex(){
-  this.pokemonId = [3,6,9,59,130,146,154,157,160,169,175,254,257,260,460];
+  this.pokemonId = [3,6,9,130,71,154,157,160,169,175,254,257,260];
 }
 
 Pokedex.prototype.getPokemon = function(){
