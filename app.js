@@ -13,8 +13,12 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
       if ($scope.results === "You Win"){
         $scope.wins += 1;
       }
-      else if($scope.results == "Computer Wins"){
+      else if($scope.results == "Gendelman Wins"){
         $scope.losses += 1;
+      }
+
+      if ($scope.wins === 10){
+        swal("Congrats!!!", "You Defeated the Evil Gendelman!", "success")
       }
     }
 
