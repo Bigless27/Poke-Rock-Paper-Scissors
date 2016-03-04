@@ -8,13 +8,19 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
     $scope.losses = 0;
     $scope.playGame = function(){
       var ryan = new Controller();
+      stopper = 0;
       $scope.results = ryan.play($scope.pick.choice);
       $scope.computerChoice = ryan.computersPick;
       if ($scope.results === "You Win"){
         $scope.wins += 1;
       }
-      else if($scope.results == "Computer Wins"){
+      else if($scope.results == "Gendelman Wins"){
         $scope.losses += 1;
+      }
+
+      if ($scope.wins === 10 ){
+        $scope.wins += 1
+        swal("Congrats!!!", "You Defeated the Evil Gendelman!", "success")
       }
     }
 
