@@ -4,10 +4,11 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
 
     $scope.results = "";
     $scope.computerChoice = "None";
-    $scope.wins = 0;
+    $scope.wins = 9;
     $scope.losses = 0;
     $scope.playGame = function(){
       var ryan = new Controller();
+      stopper = 0;
       $scope.results = ryan.play($scope.pick.choice);
       $scope.computerChoice = ryan.computersPick;
       if ($scope.results === "You Win"){
@@ -17,7 +18,8 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
         $scope.losses += 1;
       }
 
-      if ($scope.wins === 10){
+      if ($scope.wins === 10 ){
+        $scope.wins += 1
         swal("Congrats!!!", "You Defeated the Evil Gendelman!", "success")
       }
     }
