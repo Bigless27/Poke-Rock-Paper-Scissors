@@ -16,7 +16,7 @@
 * [ ] Change the name of the repository!
 * [ ] Clean up Game play Logic
 * [ ] Refactor Angular controllers
-* [ ] Add Sweet alert to display game instructions in the beggining
+* [X] Add Sweet alert to display game instructions in the beggining
 * [X] Write test before future development
 * [ ] Fix positioning 
 * [ ] Add more styling to improve UI
