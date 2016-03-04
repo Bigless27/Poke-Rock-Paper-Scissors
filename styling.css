@@ -109,3 +109,9 @@ body{
                 height: 200px;
 }
 
+.computer-choice .choice{
+                       font-family: impact,helvetica,arial;
+                       -webkit-text-stroke-width: 1px;
+                       -webkit-text-stroke-color: black;
+                       color: red;
+}
