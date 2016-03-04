@@ -21,12 +21,26 @@
                           transform:translateY(0%);
                           padding-bottom: 7px;
                       }
+                      80% {
+                           transform:translateY(-30%);
+                          }
+                      90% {
+                          transform:translateY(0%);
+                          padding-bottom: 8px;
+                      }
+                      95% {
+                          transform:translateY(-30%);
+                          }
+                      97% {
+                          transform:translateY(0%);
+                          padding-bottom: 9px;
+                      }
                     }
 .left-hand{
-            position: absolute;
+            float:left;
             padding-top: 30px;
-            left: 162px;
 }
+
 
 .right-hand{
             float:right;
