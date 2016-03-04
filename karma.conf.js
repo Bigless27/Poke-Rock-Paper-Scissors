@@ -18,6 +18,9 @@ module.exports = function(config) {
       'http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js',
       'http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-route.js',
       'http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-mocks.js',
+      "module-declaration.js",
+      "app.js",
+      "animations.js",
       '*.js',
       'spec/*Spec.js'
     ],
