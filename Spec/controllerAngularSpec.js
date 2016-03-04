@@ -12,11 +12,19 @@ describe("MainController", function(){
 
             var $scope = {};
             var controller = $controller('MainController', {$scope:$scope});
-
-            $scope.pick.choice = "fire";
+            $scope.pick.choice = "Fire";
             $scope.playGame();
-            console.log($scope.results)
-            expect($scope.results).toEqual("You Win")
+            var matcher;
+            if($scope.results === "You Win"){
+                matcher = "You Win";
+            }
+            else if($scope.results === "Computer Wins"){
+                matcher = "Computer Wins";
+            }
+            else if($scope.results === "Draw"){
+                matcher = "Draw"
+            }
+            expect($scope.results).toEqual(matcher)
         })
     })
 })
