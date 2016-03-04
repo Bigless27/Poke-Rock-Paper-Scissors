@@ -4,7 +4,7 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
 
     $scope.results = "";
     $scope.computerChoice = "None";
-    $scope.wins = 9;
+    $scope.wins = 0;
     $scope.losses = 0;
     $scope.playGame = function(){
       var ryan = new Controller();
