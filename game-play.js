@@ -31,7 +31,7 @@ function Controller(){
       return results;
     }
     else if(player.choice == "Grass" && computerChoice == "Fire"){
-      results = "Computer Wins";
+      results = "Gendelman Wins";
       return results;
     }
     else if (player.choice == "Water" && computerChoice == "Fire"){
@@ -39,7 +39,7 @@ function Controller(){
       return results;
     }
     else if(player.choice == "Fire" && computerChoice == "Water"){
-      results = "Computer Wins";
+      results = "Gendelman Wins";
       return results;
     }
     else if(player.choice == "Grass" && computerChoice == "Water"){
@@ -47,7 +47,7 @@ function Controller(){
       return results;
     }
     else if(player.choice == "Water" && computerChoice == "Grass" ){
-      results = "Computer Wins";
+      results = "Gendelman Wins";
       return results;
     }
   }
