@@ -6,8 +6,4 @@ $(document).ready(function(){
     imageUrl: "images/new-gendel-face.png",
     imageSize: "275x275"
   });
-
-
-
-
 })
