@@ -16,6 +16,7 @@
 * [ ] Change the name of the repository!
 * [ ] Clean up Game play Logic
 * [ ] Refactor Angular controllers
+* [ ] Fix temp solution to winning message being displayed more than once
 * [X] Add Sweet alert to display game instructions in the beggining
 * [X] Write test before future development
 * [ ] Fix positioning 
