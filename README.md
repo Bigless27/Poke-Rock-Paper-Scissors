@@ -1,5 +1,6 @@
 # Rock Paper Scissors JavaScript
 
+* [Click here to play!](https://pokerockpaperscissors.herokuapp.com)
 * **Pivoting Complete, now a Pokemon Rock Paper Scissors game!!!**
 * MVP now complete and fully functioning!
 * Simple application using Angular.js to build a Rock, Paper, Scissors game
