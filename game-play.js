@@ -5,50 +5,33 @@ function Player(value){
 };
 
 function Computer(){
-  var selections = ['Fire', 'Water', 'Grass']
+  this.selections = ['Fire', 'Water', 'Grass']
   this.choice = function(){
-    return selections[Math.floor((Math.random()* 3))]
+    return this.selections[Math.floor((Math.random()* 3))]
   }
 };
 
 function Controller(){
   this.computer = new Computer;
+  this.choices = this.computer.selections
   this.computersPick = this.computer.choice();
   this.play = function(value){
     var player = new Player(value);
-    var computerChoice = this.computersPick;
-    var results = "Draw";
-    if (player.choice == ""){
-      results = "No choice selected"
-      return results
-    };
-    if (player.choice == computerChoice){
-      results = "Draw";
-      return "Draw";
-    };
-    if (player.choice == "Fire" && computerChoice == "Grass"){
-      results = "You Win";
-      return results;
+    var playerChoice = this.choices.indexOf(player.choice);
+    var gendelmanChoice = this.choices.indexOf(this.computersPick);
+    if (playerChoice == gendelmanChoice) {
+        return "Draw";
     }
-    else if(player.choice == "Grass" && computerChoice == "Fire"){
-      results = "Gendelman Wins";
-      return results;
+    if (playerChoice == this.choices.length - 1 && gendelmanChoice == 0) {
+        return "Gendelman Wins";
     }
-    else if (player.choice == "Water" && computerChoice == "Fire"){
-      results = "You Win";
-      return results;
+    if (gendelmanChoice == this.choices.length - 1 && playerChoice == 0) {
+        return "Player Wins";
     }
-    else if(player.choice == "Fire" && computerChoice == "Water"){
-      results = "Gendelman Wins";
-      return results;
-    }
-    else if(player.choice == "Grass" && computerChoice == "Water"){
-      results = "You Win";
-      return results;
-    }
-    else if(player.choice == "Water" && computerChoice == "Grass" ){
-      results = "Gendelman Wins";
-      return results;
+    if (playerChoice > gendelmanChoice) {
+        return "Player Wins";
+    } else {
+        return "Gendelman Wins";
     }
   }
 }
