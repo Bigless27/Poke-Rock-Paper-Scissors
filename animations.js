@@ -14,6 +14,10 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
         $(".pokepic").show();
       }
       $scope.shake = function(){
+        shakeDisplay();
+      }
+
+      function shakeDisplay(){
         $(".pokepic").hide();
         $('.animate').show();
         $('.animate').addClass("animation");
