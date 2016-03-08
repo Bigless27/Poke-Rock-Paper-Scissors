@@ -15,7 +15,9 @@
 * [X] Refactor game play logic
 * [X] Reposition left hand
 * [ ] Change the name of the repository!
-* [ ] Clean up Game play Logic
+* [X] Clean up Game play Logic
+* [ ] Style Radio Buttons
+* [ ] Look into getting more info from poke api
 * [ ] Refactor Angular controllers
 * [ ] Fix temp solution to winning message being displayed more than once
 * [X] Add Sweet alert to display game instructions in the beggining
