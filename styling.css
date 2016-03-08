@@ -14,15 +14,20 @@ body{
 }
 
 .choices .blue{
-    width: 100px;
-    margin: 4px;
-    back
+  width: 100px;
+  margin: 4px;
+  background-color: #EFEFEF;
+  border-radius: 4px;
+  border: 1px solid #D0D0D0;
+  overflow:auto;
 }
 
-.choices input:checked + span{
-    background-color:#404040;
-    color:#F7F7F7;
+.choices label span{
+  text-align: center;
+  font-size: 55px;
+  padding: 13px 0px;
 }
+
 
 #button-container{
   height: 100px;
