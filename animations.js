@@ -25,9 +25,10 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
       }
 
       $scope.showPokemon = function(){
-
-        $scope.pokemonPlayer = pokemonController.choicePokemon[($scope.pick.choice).toLowerCase()][Math.floor((Math.random()* 3))];
-        $scope.pokemonComputer = pokemonController.choicePokemon[($scope.computerChoice).toLowerCase()][Math.floor((Math.random()* 3))];
+        var playerLowerCase = ($scope.pick.choice).toLowerCase()
+        var computerLowerCase = ($scope.computerChoice).toLowerCase()
+        $scope.pokemonPlayer = pokemonController.choicePokemon[playerLowerCase][Math.floor((Math.random()* playerLowerCase.length ))];
+        $scope.pokemonComputer = pokemonController.choicePokemon[computerLowerCase][Math.floor((Math.random()* computerLowerCase.length))];
       }
   })
 }])
