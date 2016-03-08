@@ -3,79 +3,96 @@ body{
 }
 
 #main-container{
-                width: 800px;
-                margin: auto;
-                background-color: #fff
-              }
+  width: 800px;
+  margin: auto;
+  background-color: #fff
+}
 
 .choices{
-        text-align: center;
-         padding: 30px 0px 0px 0px;
-       }
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+}
+
+.choices .blue{
+  width: 100px;
+  margin: 4px;
+  background-color: #EFEFEF;
+  border-radius: 4px;
+  border: 1px solid #D0D0D0;
+  overflow:auto;
+}
+
+.choices label span{
+  text-align: center;
+  font-size: 55px;
+  padding: 13px 0px;
+}
+
 
 #button-container{
-                  height: 100px;
-                  width: 100px;
-                  margin: auto;
-                 /* border: red solid 2px;*/
-                  padding-top: 20px;
-                  }
+  height: 100px;
+  width: 100px;
+  margin: auto;
+ /* border: red solid 2px;*/
+  padding-top: 20px;
+}
+
 
 .play-button{
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 18px;
-            }
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
 
 #stats-container{
-                  text-align: center;
-                }
+  text-align: center;
+}
 
 .results{
-              font-size: 40px;
-              height: 80px;
-              width: 200px;
-              font-family: impact,helvetica,arial;
-              -webkit-text-stroke-width: 1px;
-              -webkit-text-stroke-color: black;
-              color: red;
-              margin: auto;
-              padding-top: 30px;
-   /*           border: 2px solid blue;*/
-              text-align: center;
+  font-size: 40px;
+  height: 80px;
+  width: 200px;
+  font-family: impact,helvetica,arial;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: red;
+  margin: auto;
+  padding-top: 30px;
+/*           border: 2px solid blue;*/
+  text-align: center;
 }
 
 .computer-choice{
-                margin: auto;
-                height: 20px;
-                width: 175px;
+  margin: auto;
+  height: 20px;
+  width: 175px;
 }
 
 #picture-container{
-                  width: 700px;
-                  height: 150px;
-                 /* border: 2px solid blue;*/
-                  margin: auto;
-                  position: relative;
+  width: 700px;
+  height: 150px;
+ /* border: 2px solid blue;*/
+  margin: auto;
+  position: relative;
 }
 
 .result-picture{
-                  /*border: red 2px solid;*/
-                  height: 200px;
-                  width: 200px;
-                  position: absolute;
-                  margin-left: 20px;
-                  top: 20px;
+  /*border: red 2px solid;*/
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  margin-left: 20px;
+  top: 20px;
 }
 
 
 .win{
-    background-image: url("images/donkey-kong-thumbs-up.png");
-    background-size: 100% 100%;
+  background-image: url("images/donkey-kong-thumbs-up.png");
+  background-size: 100% 100%;
 }
 
 .lose{
@@ -89,29 +106,28 @@ body{
 }
 
 #reset-button-container{
-                        width: 60px;
-                        height: 80px;
-                        margin: auto;
-
+  width: 60px;
+  height: 80px;
+  margin: auto;
 }
 
 .reset-button{
-              width: 60px;
-              height: 60px;
-              padding-bottom: 10px;
-              text-align: center;
-              background-color: red;
-              color: #fff;
+  width: 60px;
+  height: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: red;
+  color: #fff;
 }
 
 .hand-container{
-                width: 800px;
-                height: 200px;
+  width: 800px;
+  height: 200px;
 }
 
 .computer-choice .choice{
-                       font-family: impact,helvetica,arial;
-                       -webkit-text-stroke-width: 1px;
-                       -webkit-text-stroke-color: black;
-                       color: red;
+   font-family: impact,helvetica,arial;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   color: red;
 }
