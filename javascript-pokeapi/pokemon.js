@@ -1,30 +1,19 @@
 function Pokedex(){
-  this.pokemonId = [3,6,9,130,71,154,157,160,169,175,254,257,260];
+  this.pokedex = {"grass": [3,71,154,45,251,103,254,389,192,460], "fire": [6,59,157,229,38,244,250,257,392,126,146], "water": [9,62,73,87,99,91,130,260,331,382,484]};
 }
 
-Pokedex.prototype.getPokemon = function(){
-  pokedex = {"grass": [], "fire": [], "water": []};
-  for(i in this.pokemonId){
-    $.get("http://pokeapi.co/api/v2/pokemon/"+ this.pokemonId[i] + "/",function(result){
+Pokedex.prototype.getPokemon = function(type){
+  var pokemon = []
+  var index = Math.floor(Math.random() * this.pokedex.type.length);
+  var pokemonImg = this.pokedex.type[index];
+  $.get("http://pokeapi.co/media/img/" + pokemonImg  + ".png", function(result){
 
-      }).then(function(result){
-        poketypeArray = [];
-        for (i in result.types){
-          poketypeArray.push(result.types[i].type.name);
-        }
-
-        if (poketypeArray.includes("grass") === true){
-          pokedex['grass'].push( "http://pokeapi.co/media/img/" + result.id + ".png");
-        }
-        else if(poketypeArray.includes("fire") === true){
-          pokedex['fire'].push("http://pokeapi.co/media/img/" + result.id + ".png");
-        }
-        else if(poketypeArray.includes("water") === true){
-          pokedex['water'].push("http://pokeapi.co/media/img/" + result.id + ".png");
-        }
-    });
-  }
-  return pokedex
+  }).then(function(result){
+    pokemon.push(result);
+  }).error(function(error){
+    console.log(error);
+  })
+  return pokemon
 }
 
 
