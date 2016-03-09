@@ -21,10 +21,10 @@ function Play(playerChoice,gendelmanChoice,selections){
         return "Gendelman Wins";
     }
     if (gendelmanChoice == selections.length - 1 && playerChoice == 0) {
-        return "Player Wins";
+        return "You Win";
     }
     if (playerChoice > gendelmanChoice) {
-        return "Player Wins";
+        return "You Win";
     } else {
         return "Gendelman Wins";
     }
