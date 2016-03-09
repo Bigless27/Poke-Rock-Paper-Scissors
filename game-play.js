@@ -11,11 +11,7 @@ function Computer(){
   }
 };
 
-function Controller(){
-  this.computer = new Computer;
-  this.choices = this.computer.selections
-  this.computersPick = this.computer.choice();
-  this.play = function(value){
+function Play(value){
     var player = new Player(value);
     var playerChoice = this.choices.indexOf(player.choice);
     var gendelmanChoice = this.choices.indexOf(this.computersPick);
@@ -33,7 +29,12 @@ function Controller(){
     } else {
         return "Gendelman Wins";
     }
-  }
+}
+
+function Controller(value){
+  this.computer = new Computer;
+  this.computersPick = this.computer.choice();
+  this.play = Play(value);
 }
 
 
