@@ -7,9 +7,9 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
     $scope.wins = 0;
     $scope.losses = 0;
     $scope.playGame = function(){
-      var gamePlay = new Controller();
-      $scope.results = gamePlay.Play($scope.pick.choice);
-      $scope.computerChoice = ryan.computersPick;
+      var gamePlay = new Controller($scope.pick.choice);
+      $scope.results = gamePlay.play;
+      $scope.computerChoice = gamePlay.computersPick;
       if ($scope.results === "You Win"){
         $scope.wins += 1;
       }
