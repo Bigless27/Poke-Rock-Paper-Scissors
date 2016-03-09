@@ -1,5 +1,9 @@
 function pokeController(){
-  this.pokedexController = new Pokedex()
-
-  this.choicePokemon = this.pokedexController.getPokemon();
+  this.pokedex = new Pokedex
+  this.pokemonPlayerDisplay = function(type){
+    return this.pokedex.getPokemon(type)
+  }
+  this.pokemonComputerDisplay = function(type){
+    return this.pokedex.getPokemon(type)
+  }
 }

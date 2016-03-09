@@ -3,17 +3,13 @@ function Pokedex(){
 }
 
 Pokedex.prototype.getPokemon = function(type){
-  var pokemon = []
-  var index = Math.floor(Math.random() * this.pokedex.type.length);
-  var pokemonImg = this.pokedex.type[index];
-  $.get("http://pokeapi.co/media/img/" + pokemonImg  + ".png", function(result){
-
-  }).then(function(result){
-    pokemon.push(result);
-  }).error(function(error){
-    console.log(error);
-  })
-  return pokemon
+  if (type === ''){return}
+  var typeLower = type.toLowerCase()
+  var index = Math.floor(Math.random() * this.pokedex[typeLower].length);
+  var pokemonImg = this.pokedex[typeLower][index];
+  return "http://pokeapi.co/media/img/" + pokemonImg  + ".png"
 }
+
+
 
 
