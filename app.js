@@ -1,11 +1,11 @@
 angular.module("rockPaperScissors").controller("MainController",['$scope', function($scope){
     $scope.choices = ['Grass', 'Water', 'Fire'];
     $scope.pick = {choice: ''};
-
     $scope.results = "";
     $scope.computerChoice = "None";
     $scope.wins = 0;
     $scope.losses = 0;
+
     $scope.playGame = function(){
       var gamePlay = new Controller($scope.pick.choice);
       $scope.results = gamePlay.play;

@@ -11,7 +11,7 @@ function Computer(){
 };
 
 function Play(playerChoice,gendelmanChoice,selections){
-
+    if (playerChoice === ''){return "No Choice Selected"};
     var playerChoice = selections.indexOf(playerChoice);
     var gendelmanChoice = selections.indexOf(gendelmanChoice);
     if (playerChoice == gendelmanChoice) {
