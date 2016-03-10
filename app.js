@@ -6,6 +6,11 @@ angular.module("rockPaperScissors").controller("MainController",['$scope', funct
     $scope.wins = 0;
     $scope.losses = 0;
 
+    $scope.colorInput = function(){
+      $('.choices label').removeClass('selected');
+      $('#' + $scope.pick.choice).parent().parent().addClass('selected');
+    }
+
     $scope.playGame = function(){
       var gamePlay = new Controller($scope.pick.choice);
       $scope.results = gamePlay.play;

@@ -17,6 +17,7 @@
     <script src = "app.js"></script>
     <script src = "animations.js"></script>
     <script src = "game-play.js"></script>
+    <script src = "radio-styling.js"></script>
 
   </head>
   <body ng-app = "rockPaperScissors">
@@ -48,9 +49,9 @@
           <span class = "choice display"> {{computerChoice}}</span>
         </div>
         <div class = "choices">
-          <label class = "blue" ng-repeat = "choice in choices" for = "{{choice}}">
+          <label ng-repeat = "choice in choices" for = "{{choice}}" >
           {{choice}}
-            <span>
+            <span ng-click = "colorInput()">
               <input type = "radio"
                      ng-model = "pick.choice"
                      ng-value = "choice"
