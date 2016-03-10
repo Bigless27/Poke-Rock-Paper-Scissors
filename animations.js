@@ -25,6 +25,14 @@ angular.module("rockPaperScissors").controller("AnimationsController",['$scope',
         $('.animate').removeClass("animation");
         $('.play-button').removeAttr('disabled');
         $('.display').show()
+        winMessage();
+      }
+
+      function winMessage(){
+        if ($scope.wins === 10 ){
+          $scope.wins += 1
+          swal("Congrats!!!", "You Defeated the Evil Gendelman!", "success")
+        }
       }
   })
 }])
