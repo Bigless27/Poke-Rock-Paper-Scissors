@@ -1,10 +1,8 @@
-# Rock Paper Scissors JavaScript
+# Poke Rock Paper Scissors 
 
 * [Click here to play!](https://pokerockpaperscissors.herokuapp.com)
-* **Pivoting Complete, now a Pokemon Rock Paper Scissors game!!!**
-* MVP now complete and fully functioning!
-* Simple application using Angular.js to build a Rock, Paper, Scissors game
-* Basic game play complete, just open index.html in browser to run
+* Built with Javascript, Angular, and Photshop
+* Font-end application
 
 ##Features to add
 * [X] Display computers choice 
@@ -14,17 +12,17 @@
 * [X] Pivot the project from a Rock, Paper, Scissors game into a Pokemon Rock Paper Scissors game.
 * [X] Refactor game play logic
 * [X] Reposition left hand
-* [ ] Change the name of the repository!
+* [X] Change the name of the repository!
 * [X] Clean up Game play Logic
-* [ ] Style Radio Buttons
-* [ ] Look into getting more info from poke api
-* [ ] Refactor Angular controllers
-* [ ] Fix temp solution to winning message being displayed more than once
+* [X] Style Radio Buttons
+* [X] Look into getting more info from poke api
+* [X] Refactor Angular controllers
 * [X] Add Sweet alert to display game instructions in the beggining
 * [X] Write test before future development
-* [ ] Fix positioning 
+* [X] Fix positioning 
 * [ ] Add more styling to improve UI
-* [ ] Add more pokemon to the types 
+* [ ] Fix temp solution to winning message being displayed more than once
+* [X] Add more pokemon to the types 
 * [ ] Create an Easter egg
 
 
