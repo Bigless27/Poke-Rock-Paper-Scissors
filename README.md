@@ -21,7 +21,7 @@
 * [X] Write test before future development
 * [X] Fix positioning 
 * [ ] Add more styling to improve UI
-* [ ] Fix temp solution to winning message being displayed more than once
+* [X] Fix temp solution to winning message being displayed more than once
 * [X] Add more pokemon to the types 
 * [ ] Create an Easter egg
 
