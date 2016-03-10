@@ -32,20 +32,20 @@
           </div>
           <div id = "pokemon-container">
             <div class = "pokemon-player">
-              <img class = "pokepic" ng-src = "{{pokemonPlayer}}">
+              <img class = "pokepic display" ng-src = "{{pokemonPlayer}}">
             </div>
             <div class = "pokemon-computer">
-              <img class = "pokepic" ng-src = "{{pokemonComputer}}">
+              <img class = "pokepic display" ng-src = "{{pokemonComputer}}">
             </div>
           </div>
         </div>
         <div class = "hand-container">
           <img class = "left-hand animate" alt= "left fist" src="images/RPS-hand-left.png" height = 200px width = 200px>
           <img class = "right-hand animate" alt= "right fist" src="images/RPS-hand-right.png" height = 200px width = 200px>
-          <div class = "results">{{results}}</div>
+          <div class = "results display">{{results}}</div>
         </div>
         <div class = "computer-choice"> Gendelman chose:
-          <span class = "choice"> {{computerChoice}}</span>
+          <span class = "choice display"> {{computerChoice}}</span>
         </div>
         <div class = "choices">
           <label class = "blue" ng-repeat = "choice in choices" for = "{{choice}}">
@@ -63,7 +63,7 @@
           <div id = "button-container">
             <button class = "play-button" ng-click = "playGame(); showPokemon()">Play</button>
           </div>
-          <div class = "result-picture" ng-class = "{'win': results === 'You Win', 'lose': results === 'Gendelman Wins', 'draw': results === 'Draw'}">
+          <div class = "result-picture display" ng-class = "{'win': results === 'You Win', 'lose': results === 'Gendelman Wins', 'draw': results === 'Draw'}">
             </div>
         </div>
       </div>
