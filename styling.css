@@ -13,13 +13,43 @@ body{
   padding: 30px 0px 0px 0px;
 }
 
-.choices .blue{
-  width: 100px;
+.choices label{
   margin: 4px;
-  background-color: #ccc;
   border-radius: 4px;
   border: 1px solid #D0D0D0;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
   overflow:auto;
+}
+
+.Fire{
+  color: #fff;
+  background-color:red;
+}
+
+.Water{
+  color: #fff;
+  background-color:blue;
+}
+
+.Grass{
+  color: #fff;
+  background-color:green;
+}
+
+
+.choices span input{
+  display: none;
+}
+
+.choices span input[type = "radio"]:checked + .choices span input{
+  background-color: red;
+  color: red;
+}
+
+.selected{
+  background-color: #ccc;
 }
 
 #button-container{
@@ -35,7 +65,8 @@ body{
   width: 100px;
   height: 100px;
   background-color: red;
-  color: white;
+  color: #fff;
+  font-family: verdana;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
