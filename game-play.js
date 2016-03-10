@@ -1,5 +1,4 @@
 function Player(value){
-  this.choice = value;
   this.wins = 0;
   this.losses = 0;
 };
@@ -11,29 +10,31 @@ function Computer(){
   }
 };
 
-function Controller(){
-  this.computer = new Computer;
-  this.choices = this.computer.selections
-  this.computersPick = this.computer.choice();
-  this.play = function(value){
-    var player = new Player(value);
-    var playerChoice = this.choices.indexOf(player.choice);
-    var gendelmanChoice = this.choices.indexOf(this.computersPick);
+function Play(playerChoice,gendelmanChoice,selections){
+    if (playerChoice === ''){return "No Choice Selected"};
+    var playerChoice = selections.indexOf(playerChoice);
+    var gendelmanChoice = selections.indexOf(gendelmanChoice);
     if (playerChoice == gendelmanChoice) {
         return "Draw";
     }
-    if (playerChoice == this.choices.length - 1 && gendelmanChoice == 0) {
+    if (playerChoice == selections.length - 1 && gendelmanChoice == 0) {
         return "Gendelman Wins";
     }
-    if (gendelmanChoice == this.choices.length - 1 && playerChoice == 0) {
-        return "Player Wins";
+    if (gendelmanChoice == selections.length - 1 && playerChoice == 0) {
+        return "You Win";
     }
     if (playerChoice > gendelmanChoice) {
-        return "Player Wins";
+        return "You Win";
     } else {
         return "Gendelman Wins";
     }
-  }
+}
+
+function Controller(value){
+  this.computer = new Computer;
+  this.computersPick = this.computer.choice();
+  this.choices = this.computer.selections;
+  this.play =  Play(value,this.computersPick, this.choices);
 }
 
 
