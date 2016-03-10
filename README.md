@@ -3,6 +3,7 @@
 * [Click here to play!](https://pokerockpaperscissors.herokuapp.com)
 * Built with Javascript, Angular, and Photshop
 * Font-end application
+* Inspired by James Kirkpatrick who is literally a pokemon
 
 ##Features to add
 * [X] Display computers choice 
