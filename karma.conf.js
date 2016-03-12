@@ -21,6 +21,7 @@ module.exports = function(config) {
       "module-declaration.js",
       "app.js",
       "animations.js",
+      "javascript-pokeapi/*.js",
       '*.js',
       'spec/*Spec.js'
     ],
